@@ -1,0 +1,343 @@
+/*--------Global---------*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 100;
+}
+
+body {
+    width: 60%;
+    margin: auto;  
+    
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: #ffcc59;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    color: #8f9ea5;
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #17191A;
+}
+
+p {
+    columns: #8f9ea5;
+    opacity: 0.8;
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.white {
+    color: white;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;       
+    /*position: relative; */
+}
+
+.orangebutton {
+    text-decoration: none;
+    padding: 15px;
+    margin: 15px;
+    background-color: #ffcc59;    
+    color: white;
+    font-size: 19px;    
+    border-radius: 5px;
+    min-width: 300px;
+    
+}
+
+/*--------Header---------*/
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto 10px auto;
+    align-items: flex-end;    
+}
+
+.navigation li, .logo {
+    display: inline-block;
+    
+    
+}
+
+.navigation ul a {
+    text-decoration: none; 
+    list-style-type: none;
+    font-size: 25px;
+    margin: 15px;
+    color: #8f9ea5;
+    text-transform: lowercase;
+        
+}
+
+.navigation a:hover {
+    color: #ffcc59;
+}
+    
+/*--------intro---------*/
+
+#intro .container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    background-image: url(images/intro1.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.intro {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+/*--------askme---------*/
+
+#askme .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 60px auto 20px auto;
+}
+
+#askme .container h2 {
+    color: #8f9ea5;
+}
+
+.button {
+    margin: 40px;    
+}
+
+.orangebutton:hover {
+    background-color: #196499;
+}
+
+/*--------aboutme---------*/
+
+#aboutme .container {
+    padding: 10px;
+    text-align: justify;
+    margin-top: 40px;
+    display: flex;
+}
+
+.aboutimg img {
+    width: 250px;
+    height: 250px;
+}
+
+.abouttxt {
+    margin-top: 40px;
+    margin-left: 30px;
+    
+}
+
+/*--------skills---------*/
+
+#skills {
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+#skills p {
+    margin-bottom: 30px;    
+}
+
+#skills img {
+    width: 40px;
+    margin: 0 15px;
+}
+/*--------portfolio---------*/
+
+
+.row {
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-top: 40px;    
+    flex-wrap: wrap;   
+    
+}
+
+#portfolio .row {
+    justify-content: center;
+    
+}
+
+.portfolio {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;      
+}
+
+.gallery {
+    transition: all 0.2s ease-in-out;
+}
+
+.gallery:hover {
+    transform: scale(0.9);
+}
+
+/*--------form---------*/
+
+#contact .row {
+    justify-content: space-between;
+}
+
+#contact .container{
+    text-align: center;
+}
+.text-center {
+    text-align: center !important ;
+}
+
+.contact p {
+    margin-bottom: 50px;
+    
+}
+
+.container {
+    max-width: 1140px;
+}
+
+#contact textarea {
+    height: 150px;
+    margin-bottom: 45px;
+    resize: none;
+}
+
+#contact input, #contact textarea {
+    border-bottom: 2px solid #ffcc59;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+/*--------footer---------*/
+
+
+.socials
+{
+	width:100%;
+    text-align: center;
+    margin-top: 30px;
+	
+}
+
+.socialdivs
+{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fb
+{
+	width: 200px;
+	height: 155px;
+	float:left;
+}
+
+.fb:hover
+{
+	background-color: #ffcc59;
+}
+
+.yt
+{
+	width: 200px;
+	height: 155px;
+	float:left;
+}
+
+.yt:hover
+{
+	background-color: #ffcc59;
+}
+
+.tw
+{
+	width: 200px;
+	height: 155px;
+	float:left;
+}
+
+.tw:hover
+{
+	background-color: #ffcc59;
+}
+
+.gplus
+{
+	width: 200px;
+	height: 155px;
+	float:left;
+}
+
+.gplus:hover
+{
+	background-color: #ffcc59;
+}
+
+.info {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/*--------responsive---------*/
+
+/*
+@media (max-width: 800){
+    /*header*
+    header .container .navigation .logo {
+        flex-direction: column;
+    }
+}
+
+*/
+
+@media only screen and (max-width: 1024px){
+    
+    header .container {
+        flex-direction: column;
+        
+    }
+
+    header .logo, header .navigation {
+        text-align: center;
+    }
+    
+    
+
+   
+}
