@@ -249,6 +249,7 @@ header .container {
 	width:100%;
     text-align: center;
     margin-top: 30px;
+    flex-flow: column wrap;
 	
 }
 
@@ -256,7 +257,8 @@ header .container {
 {
 	width: 800px;
 	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    
 }
 
 .fb
